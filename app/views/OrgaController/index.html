@@ -1,0 +1,11 @@
+<h1>Organisations</h1>
+<ul style="list-style-type:none;">
+    {% for o in orga %}
+        <li><a href="orgas/{{o.id}}" data-target="#details">{{ o.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<div id="details">
+</div>
+
+{{ script_foot | raw }}
