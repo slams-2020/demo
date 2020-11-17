@@ -15,7 +15,7 @@ class UserControllerViewer extends ModelViewer {
 	 */
 	public function recordsPerPage($model, $totalCount = 0) {
 		if ($totalCount > 20)
-			return 20;
+			return 200;
 		return;
 	}
 	public function isModal($objects, $model) {
